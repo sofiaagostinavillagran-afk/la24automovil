@@ -4,70 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La 24 Automóviles | Inicio</title>
-    <!-- Línea obligatoria para vincular los estilos externos -->
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <header>
-        <div>
-            <a href="#"><img src="./imagenes de la 24 auto/logo 24.png" alt="Logo de la empresa"></a>
+    <!-- Header con clase para el diseño responsive -->
+    <header class="header-principal">
+        <div class="logo-contenedor">
+            <a href="index.html"><img src="./imagenes de la 24 auto/logo 24.png" alt="Logo de la empresa"></a>
         </div>
-        <nav>
+        <nav class="nav-menu">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./pages/galeria.html">Galería</a></li>
-                <li><a href="./pages/contacto.html">Contáctanos</a></li>
-                <li><a href="./pages/sobre-mi.html">Sobre Mí</a></li>
-                <li><a href="./pages/proyectos.html">Proyectos</a></li>
-                <li><a href="./pages/servicios.html">Servicios</a></li>
-            </ul>
-        </nav>
+                <li><a href="index.html" class="nav-link activo">Inicio</a></li>
+                <li><a href="./pages/sobre-mi.html" class="nav-link">Sobre Mí</a></li>
+                <li><a href="./pages/proyectos.html" class="nav-link">Proyectos</a></li>
+                <li><a href="./pages/servicios.html" class="nav-link">Servicios</a></li>
+                <li><a href="./pages/contacto.html" class="nav-link">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h1>Seguridad garantizada</h1>
-            <aside>
-                <h2>Conoce todas nuestras ofertas</h2>
-                <p>Ver más</p>
-            </aside>
+    <main class="main-contenido">
+        <!-- SECCIÓN 1: Aquí aplicamos el Grid Maestro con Áreas -->
+        <section class="seccion-contenedor grid-maestro-seccion">
+            <div class="area-hero">
+                <h1 class="titulo-principal">Seguridad garantizada</h1>
+                <p class="texto-descripcion">Descubrí la mejor calidad y confianza en vehículos seleccionados en San Miguel de Tucumán.</p>
+            </div>
+            
+            <div class="area-destacados">
+                <aside class="aside-ofertas">
+                    <h2 class="aside-titulo">Conoce todas nuestras ofertas</h2>
+                    <p class="texto-descripcion">Ver más</p>
+                </aside>
+            </div>
         </section>
 
-        <section>
-            <article>
-                <h2>Autos</h2>
-                <figure>
-                    <img src="./imagenes de la 24 auto/autos.jpg" alt="Autos variados en exhibición">
-                </figure>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor praesentium non, facilis ea aut laudantium atque quia fuga iste velit placeat.</p>
-            </article>
+        <!-- SECCIÓN 2: Grilla de tarjetas (se transforma de 1 a 3 columnas en desktop) -->
+        <section class="seccion-contenedor">
+            <div class="grid-tarjetas">
+                <article class="card-articulo">
+                    <h2 class="card-titulo">Autos</h2>
+                    <figure>
+                        <img src="./imagenes de la 24 auto/autos.jpg" alt="Autos variados en exhibición" class="card-imagen">
+                    </figure>
+                    <p class="texto-descripcion">Explora nuestra variedad de automóviles urbanos y sedanes listos para circular.</p>
+                </article>
 
-            <article>
-                <h2>Camioneta</h2>
-                <figure>
-                    <img src="./imagenes de la 24 auto/camionetas.jpg" alt="Varias camionetas disponibles">
-                </figure>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor praesentium non, facilis ea aut laudantium atque quia fuga iste velit placeat.</p>
-            </article>
+                <article class="card-articulo">
+                    <h2 class="card-titulo">Camionetas</h2>
+                    <figure>
+                        <img src="./imagenes de la 24 auto/camionetas.jpg" alt="Varias camionetas disponibles" class="card-imagen">
+                    </figure>
+                    <p class="texto-descripcion">Encontrá la fuerza y resistencia que necesitás en nuestras camionetas de trabajo.</p>
+                </article>
 
-            <article>
-                <h2>SUV</h2>
-                <figure>
-                    <img src="./imagenes de la 24 auto/suv.jpg" alt="Varias SUV de diferentes modelos">
-                </figure>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor praesentium non, facilis ea aut laudantium atque quia fuga iste velit placeat.</p>
-            </article>
+                <article class="card-articulo">
+                    <h2 class="card-titulo">SUV</h2>
+                    <figure>
+                        <img src="./imagenes de la 24 auto/suv.jpg" alt="Varias SUV de diferentes modelos" class="card-imagen">
+                    </figure>
+                    <p class="texto-descripcion">Comodidad, espacio y tecnología para toda la familia en nuestra línea de SUV.</p>
+                </article>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>Todos los derechos reservados</p>
-        <ul>
-            <li><a href="https://www.instagram.com/la24_automoviles?stkn=MWNubmpscnBiMnBiZQ==" target="_blank"><img src="./imagenes de la 24 auto/instagram.png" alt="Logo de Instagram"></a></li>
-            <li><a href="https://www.tiktok.com/@la.24.automvil?_r=1&_t=ZS-9AHvZJXOmTU" target="_blank"><img src="./imagenes de la 24 auto/tiktok.png" alt="Logo de TikTok"></a></li>
-            <li><a href="https://web.whatsapp.com/" target="_blank"><img src="./imagenes de la 24 auto/whatsaap.png" alt="Logo de WhatsApp"></a></li>
+    <footer class="footer-principal">
+        <p class="footer-texto">Todos los derechos reservados</p>
+        <ul class="footer-sociales">
+            <li><a href="https://www.instagram.com/la24_automoviles?stkn=MWNubmpscnBiMnBiZQ==" target="_blank"><img src="./imagenes de la 24 auto/instagram.png" alt="Logo de Instagram" class="social-icon"></a></li>
+            <li><a href="https://www.tiktok.com/@la.24.automvil?_r=1&_t=ZS-9AHvZJXOmTU" target="_blank"><img src="./imagenes de la 24 auto/tiktok.png" alt="Logo de TikTok" class="social-icon"></a></li>
+            <li><a href="https://web.whatsapp.com/" target="_blank"><img src="./imagenes de la 24 auto/whatsaap.png" alt="Logo de WhatsApp" class="social-icon"></a></li>
         </ul>
     </footer>
 </body>
